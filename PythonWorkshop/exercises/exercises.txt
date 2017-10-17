@@ -1,0 +1,38 @@
+1. Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included).
+
+2. Write a function that returns a dictionary (i, i*i) between 1 and n.
+
+3. Write a function which takes 2 digits, X,Y as input and generates a 2-dimensional array. The element value in the i-th row and j-th column of the array should be i*j.
+
+4.A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with a given steps.
+The trace of robot movement is shown as the following:
+UP 5
+DOWN 3
+LEFT 3
+RIGHT 2
+
+The numbers after the direction are steps. Write a program read directions from a text file and compute the distance from current position after a sequence of movement and original point.
+If the distance is a float, then just print the nearest integer.
+
+Example:
+If the following tuples are given as input to the program:
+UP 5
+DOWN 3
+LEFT 3
+RIGHT 2
+Then, the output of the program should be:
+2
+
+5. Write a program that, given a text file, prints the total number of words and the number of occurences and percentage of each word in the file.
+(Try it out with lusidas.txt)
+
+6. Write a class named Shape.
+Write the classes Circle and Rectangle, which extend Shape.
+Write the class Square, which extends Rectangle.
+
+All these classes have a method that returns their area. For this to be possible, the classes' constructors must accept the necessary info (radius for circle, length for square, ...)
+
+
+7. Open exercise: This exercise should be used to occupy time if you finish early (and for some reason don't want to leave yet (not that I want you to leave, please stay as long as you like :P)).
+Write a text-based RPG game. This game can be as complex as you want it to. For inspiration please refer to rpg.py (you can actually play the game as well).
+For a more complex example, refer to http://www.bbc.co.uk/programmes/articles/1g84m0sXpnNCv84GpN2PLZG/the-hitchhikers-guide-to-the-galaxy-game-30th-anniversary-edition

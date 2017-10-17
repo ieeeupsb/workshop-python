@@ -15,9 +15,9 @@ Write a function which takes 2 digits, X,Y as input and generates a 2-dimensiona
 The element value in the `i-th` row and `j-th` column of the array should be `i*j`.
 Example for 3:
 ```
+[0 0 0]
 [0 1 2]
-[1 1 2]
-[2 2 4]
+[0 2 4]
 ```
 
  ### 4. Follow the robots 🔍

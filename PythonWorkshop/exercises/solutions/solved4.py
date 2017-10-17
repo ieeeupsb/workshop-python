@@ -2,7 +2,7 @@ from math import sqrt
 
 currPosition = [0, 0]
 
-directions = open("directions.txt", "r")
+directions = open("../directions.txt", "r")
 
 for dir in directions:
     dirList = dir.split(" ")

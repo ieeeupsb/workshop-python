@@ -1,5 +1,6 @@
 from math import pi
 
+
 class Shape:
     def __init__(self):
         pass
@@ -14,7 +15,7 @@ class Cicrle(Shape):
         self.radius = radius
 
     def area(self):
-        return (pi*self.radius)**2
+        return (pi * self.radius)**2
 
 
 class Rectangle(Shape):
@@ -24,10 +25,11 @@ class Rectangle(Shape):
         self.l2 = l2
 
     def area(self):
-        return self.l1*self.l2
+        return self.l1 * self.l2
+
 
 class Square(Rectangle):
     def __init__(self, length):
         Rectangle.__init__(self, length, length)
 
-    #don't need to override the area method from rectangle because it already does what we need
+    # don't need to override the area method from rectangle because it already does what we need

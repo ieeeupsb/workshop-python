@@ -33,7 +33,7 @@ print(myList)
 
 """file I/O"""
 # available modes: r, w, r+, a, rb, wb, rb+, ab
-textFile = open("exampleFile.txt", "r")
+textFile = open("exampleFile.txt", "r", encoding="utf-8") # "utf-8" is useful for portugues chars
 print(textFile.read())  # reads everythig
 textFile.seek(0)  # goes back to the file start
 print(textFile.read(15))  # "Hello, how are

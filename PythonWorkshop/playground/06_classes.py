@@ -45,11 +45,12 @@ class Animal:
         return self.age
 
 
-class Human(Animal):
-    def __init__(self, age, name):
+class Human(Animal):  # Human inherits from Animal
+    def __init__(self, age, name):  # new constructor
+        # calls parent class's constructor
         super(Human, self).__init__("Homo Sapiens Sapiens", age, 85, name)
 
-    def getAge(self):
+    def getAge(self):  # implements a new method, not present in Human
         if not self.alive:
             return "dead"
         return self.age
@@ -64,7 +65,7 @@ class Dog(Animal):
             return "dead"
         return self.convertAge()
 
-    def convertAge(self):
+    def convertAge(self):  # overrides a method from its parent
         if self.age <= 2:
             return self.age * 10.5
         else:

@@ -1,4 +1,4 @@
-CodeWeek - Python Workshop
+# CodeWeek - Python Workshop
 Materials and useful tips for the python workshop
 
 ### Download the [presentation](https://github.com/ieeeupsb/workshop-python/raw/master/introPython3.pptx)

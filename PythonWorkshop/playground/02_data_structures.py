@@ -14,7 +14,7 @@ elementOfNestedList = aList[-1][0]  # same as nestedList[0]
 
 anotherList[0] = "zero"  # lists, contrary to strings, are mutable
 del anotherList[1:3]
-# print(anotherList)
+print(anotherList)
 
 evenNumberList = list(range(0, 201, 2))
 oddNumberList = list(range(201, 0, -2))[::-1]
@@ -49,7 +49,7 @@ removedList = theList.pop()
 print(theList)
 
 # returns and removes the object at index 3
-thirdElement = theList.pop(3)
+thirdElement = theList.pop(0)
 print(theList)
 
 # returns the number of elements in the list
@@ -102,8 +102,12 @@ singleTuple = "one is the loneliest number :'C",
 
 # can't do this because, like strings, tuples are immutable
 # t[0] = 3
+
+singleTuple = [10, 20, 30],
+print(singleTuple)  # ([10, 20, 30],)
 # you can, however, manipulate the mutable contents of a tuple
-t[-1][0] = 42  # the last element's first element is now 42
+singleTuple[-1][0] = 42  # the last element's first element is now 42
+print(singleTuple)  # ([42, 20, 30],)
 
 # tuple packing of heterogeneous values
 t = 1, 2, "something", "number 9", [0, 1, 2, 3]
@@ -125,13 +129,13 @@ yetAnotherSet = {x**3 for x in range(3, 70, 4)}
 uniqueChars = set("supercalifragilisticexpialidocious")
 otherUniqueChars = set("bibbidi bobbidi boo")
 
-#set difference
+# set difference
 print(uniqueChars - otherUniqueChars)
-#set intersection
+# set intersection
 print(uniqueChars & otherUniqueChars)
-#set union
+# set union
 print(uniqueChars | otherUniqueChars)
-#set symetric difference
+# set symetric difference
 print(uniqueChars ^ otherUniqueChars)
 
 """ end of Sets """
@@ -142,16 +146,14 @@ print(uniqueChars ^ otherUniqueChars)
 # keys must be unique and immutable
 httpResponseCodes = {404: "Not found", 403: "Forbidden", 200: "OK",
                      201: "Created", 418: "I'm a teapot"}
-#equivalent to above
-httpResponseCodes = dict(404="Not found", 403="Forbidden",
-                    200="OK", 201="Created", 418="I'm a teapot")
-print(httpResponseCodes[418]) # "I'm a teapot"
+print(httpResponseCodes[418])  # "I'm a teapot"
 
-squareValues = {x: x**2 for x in range(101)} # {0: 0, 1: 1, ..., 100: 10000}
+squareValues = {x: x**2 for x in range(101)}  # {0: 0, 1: 1, ..., 100: 10000}
 
 
-print(list(httpResponseCodes.keys())) # [404, 403, 200, 201, 418]
-print(list(httpResponseCodes.items())) #[(404, 'Not found'), ..., (418, "I'm a teapot")]
+print(list(httpResponseCodes.keys()))  # [404, 403, 200, 201, 418]
+# [(404, 'Not found'), ..., (418, "I'm a teapot")]
+print(list(httpResponseCodes.items()))
 
 print("Available response codes: ")
 for key, value in httpResponseCodes.items():

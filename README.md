@@ -11,7 +11,7 @@ Materials and useful tips for the python workshop
 ### Iterations
 
  - [x] 18/10/2017 - from 14h00 to 16h00, at J201 (by [@Areadrill](https://github.com/Areadrill) and [@msramalho](https://github.com/msramalho))
- - [x] 02/04/2018 - from 14h30 to 17h30, at J201
+ - [x] 02/04/2018 - from 14h30 to 17h30, at J201 (by [@msramalho](https://github.com/msramalho), [@joao-conde](https://github.com/joao-conde) and [@Areadrill](https://github.com/Areadrill))
  
 ---
 
